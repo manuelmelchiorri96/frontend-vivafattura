@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-welcome-component',
@@ -7,10 +7,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./welcome-component.component.css'],
 })
 export class WelcomeComponentComponent {
-  imageUrl!: SafeResourceUrl;
-
-  constructor(private sanitizer: DomSanitizer) {
-    this.imageUrl =
-      this.sanitizer.bypassSecurityTrustResourceUrl('assets/bg-home.svg');
+  constructor(private router: Router) {}
+  vaiAlLogin() {
+    this.router.navigate(['login']);
   }
 }

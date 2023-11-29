@@ -1,8 +1,16 @@
 <div class="body">
-  <div class="bg">
-    <img [src]="imageUrl" alt="SVG Image" />
+  <div class="bg"></div>
+
+  <div class="box-intro">
+    <h1>Viva Fattura</h1>
+    <h2>Fai volare il tuo capitale!</h2>
+    <p>
+      Con noi i tuoi soldi sono al sicuro, crescono e sono sempre a tua
+      disposizione.
+    </p>
   </div>
-  <div class="box-welcome">
+
+  <div class="box-rocket">
     <div class="rocket">
       <div class="rocket-body">
         <div class="body"></div>
@@ -31,6 +39,24 @@
         <li></li>
         <li></li>
       </ul>
+    </div>
+  </div>
+
+  <div class="box-btn">
+    <div class="radio-inputs">
+      <label class="radio">
+        <input type="radio" name="radio" />
+        <span (click)="vaiAlLogin()" class="name">Login</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio" />
+        <span class="name">Registrati</span>
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="radio" />
+        <span class="name">Domande frequenti</span>
+      </label>
     </div>
   </div>
 </div>

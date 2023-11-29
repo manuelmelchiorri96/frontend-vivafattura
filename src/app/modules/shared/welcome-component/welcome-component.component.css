@@ -3,7 +3,6 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  font-family: "Inter", sans-serif;
 }
 
 .bg {
@@ -13,18 +12,36 @@
   top: 0;
   left: 0;
   z-index: 1;
+  background-color: #5d3fd3;
 }
 
-.bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.box-intro {
+  height: 70vh;
+  width: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15vh;
+  left: 5vw;
+  z-index: 2;
 }
 
-.box-welcome {
+.box-intro h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #dadada;
+}
+
+.box-intro h2 {
+  margin-left: 5px;
+  font-size: 3.5rem;
+}
+
+.box-intro p {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.box-rocket {
   height: 70vh;
   width: 40%;
   position: absolute;
@@ -330,4 +347,51 @@
     transform: scale(1.1);
     opacity: 0.7;
   }
+}
+
+.box-btn {
+  position: absolute;
+  bottom: 15vh;
+  left: 5vw;
+  z-index: 2;
+}
+
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 400px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: #3a2491;
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:hover + .name {
+  background-color: #5d3fd3;
+  color: #dadada;
+  font-weight: 600;
 }
