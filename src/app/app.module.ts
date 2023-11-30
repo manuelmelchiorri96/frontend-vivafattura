@@ -4,16 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponentComponent } from './modules/login-component/login-component.component';
-import { WelcomeComponentComponent } from './modules/welcome-component/welcome-component.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './modules/login/login.component';
+import { HomeComponent } from './modules/home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponentComponent,
-    WelcomeComponentComponent,
-  ],
+  declarations: [AppComponent, LoginComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
