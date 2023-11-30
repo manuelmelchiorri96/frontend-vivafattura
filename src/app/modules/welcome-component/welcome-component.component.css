@@ -28,17 +28,19 @@
   font-size: 5rem;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #dadada;
+  color: #3a2491;
 }
 
 .box-intro h2 {
   margin-left: 5px;
   font-size: 3.5rem;
+  color: #dadada;
 }
 
 .box-intro p {
   margin-left: 5px;
   font-size: 1.5rem;
+  color: #dadada;
 }
 
 .box-rocket {
@@ -360,13 +362,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
-  background-color: #eee;
+  border-radius: 7px;
+  background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
   width: 400px;
-  font-size: 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .radio-inputs .radio {
@@ -386,12 +389,11 @@
   border-radius: 0.5rem;
   border: none;
   padding: 0.5rem 0;
-  color: #3a2491;
+  color: #8b8e98;
   transition: all 0.15s ease-in-out;
 }
 
 .radio-inputs .radio input:hover + .name {
-  background-color: #5d3fd3;
-  color: #dadada;
-  font-weight: 600;
+  background-color: #3a2491;
+  color: #f5f5f5;
 }

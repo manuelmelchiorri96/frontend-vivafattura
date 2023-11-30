@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { ClienteDTO } from '../model/dto/clienteDTO';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ServiceService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   private baseUrl: string = 'http://localhost:';
 
@@ -12,14 +15,4 @@ export class ServiceService {
     signUpService: 8202,
     authenticateService: 8203,
   };
-
-  getAuthenticateUrl(): string {
-    const port = this.microservicePorts.authenticateService;
-    return `${this.baseUrl}${port}/rest/api/authenticate`;
-  }
-
-  getSignUpUrl(): string {
-    const port = this.microservicePorts.signUpService;
-    return `${this.baseUrl}${port}/rest/api/sign-up`;
-  }
 }
