@@ -12,4 +12,12 @@ export class HomeComponent {
   vaiAlLogin() {
     this.router.navigate(['login']);
   }
+
+  vaiAllaRegistrazione() {
+    this.router.navigate(['registrazione']);
+  }
+
+  vaiADomandeFrequenti() {
+    this.router.navigate(['domande-frequenti']);
+  }
 }

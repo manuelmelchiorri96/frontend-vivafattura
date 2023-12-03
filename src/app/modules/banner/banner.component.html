@@ -1,0 +1,8 @@
+<div class="overlay" [style.display]="showBanner ? 'block' : 'none'"></div>
+<div class="banner" *ngIf="showBanner" [@fadeInOut] (click)="hideBanner()">
+  <div class="container">
+    <div class="message" *ngIf="message">{{ message }}</div>
+    <div *ngIf="isSuccess" class="icon" [@iconAnimation]>&#10003;</div>
+    <div *ngIf="isError" class="icon error" [@iconAnimation]>&#10005;</div>
+  </div>
+</div>
